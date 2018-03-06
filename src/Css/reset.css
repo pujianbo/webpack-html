@@ -1,0 +1,129 @@
+html {
+    color: #464646;
+    font: 12px/1.5 'Microsoft Yahei', 'Consolas', 'Arial', '\5b8b\4f53'
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul, ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    color: inherit
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, hr, blockquote, pre, form, fieldset, legend, input, button, textarea {
+    margin: 0;
+    padding: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+input, button, select, textarea {
+    border: 0;
+    outline: 0;
+    resize: none;
+    color: inherit;
+    border-radius: 0;
+    font-size: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=radio], input[type=checkbox], button, label, select, a {
+    cursor: pointer
+}
+
+input[type=tel], input[type=email], input[type=number], input[type=password] {
+    -ms-ime-mode: disabled;
+    ime-mode: disabled;
+}
+
+input[disabled=disabled], button[disabled=disabled] {
+    cursor: not-allowed
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block
+}
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+audio:not([controls]) {
+    display: none
+}
+
+.clearfix:after, .clearfix:after {
+    display: table;
+    content: '';
+    clear: both
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
+
+.block {
+    display: block
+}
+
+.lineblock {
+    display: inline-block
+}
+
+.hidden {
+    display: none
+}
+
+.overhidden {
+    overflow: hidden
+}
+
+.relative {
+    position: relative
+}
+
+.absolute {
+    position: absolute
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-els {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}

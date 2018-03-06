@@ -1,0 +1,119 @@
+//public.css
+@import "quote.scss";
+$colorHeaderBg: #35375D;
+$colorFooterBg: #35375D;
+$headerHeight: 100px;
+$footerHeight: 120px;
+
+baby {
+    background-color: #fff;
+}
+
+.container {
+    margin: $headerHeight auto $footerHeight;
+    min-height: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $colorHeaderBg;
+    height: $headerHeight;
+    line-height: $headerHeight;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 10;
+
+    .h_back {
+        display: block;
+        width: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 11;
+        background: url("../img/icon/left.png") no-repeat center /24px;
+    }
+
+    .h_title {
+        text-align: center;
+        padding: 0 100px;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    z-index: 5;
+    text-align: center;
+    color: #fff;
+    background-color: $colorFooterBg;
+    height: $footerHeight;
+    font-size: 23px;
+
+    a {
+        flex: 1;
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .comment {
+        background: url("../img/icon/comment.png") no-repeat top -6px center/64px;
+    }
+
+    .dianzan {
+        background: url("../img/icon/dianzan.png") no-repeat top center/54px;
+    }
+
+    .toupiao {
+        background: url("../img/icon/liwu.png") no-repeat top center/54px;
+    }
+
+    .fenxiang {
+        background: url("../img/icon/fenxiang.png") no-repeat top center/54px;
+    }
+}
+
+.color-white {
+    color: $colorWhite!important;
+}
+
+.color-blue {
+    color: $colorBlue!important;
+}
+
+.bgc-white {
+    background-color: $colorWhite!important;
+}
+
+.bgc-black {
+    background-color: $colorBlack!important;
+}
+
+.bgc-gary {
+    background-color: $colorGary!important;
+}
+
+.bgc-orange {
+    background-color: $colorOrange!important;
+}
+
+.bgc-yellow {
+    background-color: $colorYellow!important;
+}
+
+.bgc-blue {
+    background-color: $colorBlue!important;
+}
+
+.bgc-red {
+    background-color: $colorRed!important;
+}
