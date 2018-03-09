@@ -1,5 +1,5 @@
 module.exports = {
-    port: 80,
+    port: 1234,
     IPv4: 'localhost',
     agentSev: 'http://192.168.2.12:9000',
     getAgent: function() {

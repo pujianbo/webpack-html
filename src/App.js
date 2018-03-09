@@ -5,5 +5,5 @@ import './Scss/pjb.scss'
 import './Scss/lt.scss'
 
 
-import './Js/jquery'
-import './Js/public'
+// import './Js/jquery'
+// import './Js/public'

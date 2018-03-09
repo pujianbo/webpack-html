@@ -28,11 +28,12 @@ plugins.push(
     new BrowserSyncPlugin({
         host: webConfig.getIP(),
         port: webConfig.port + 1,
+        files: '**',
         files: 'src/*',
-        files: 'dist/*',
+        files: 'build/*',
         files: 'index.html',
         server: {
-            baseDir: ['./dist']
+            baseDir: ['./build']
         }
     })
 );
@@ -44,7 +45,7 @@ module.exports = {
     },
     output: {
         //publicPath:'/',
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'build'),
         filename: 'Js/[name].js'
     },
     devServer: {

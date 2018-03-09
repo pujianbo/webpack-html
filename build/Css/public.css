@@ -1,0 +1,194 @@
+html {
+    color: #464646;
+    font: 0.43rem/1.5 'Microsoft Yahei', 'Consolas', 'Arial', '\5B8B\4F53'
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul, ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    color: inherit
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, hr, blockquote, pre, form, fieldset, legend, input, button, textarea {
+    margin: 0;
+    padding: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+input, button, select, textarea {
+    border: 0;
+    outline: 0;
+    resize: none;
+    color: inherit;
+    border-radius: 0;
+    font-size: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=radio], input[type=checkbox], button, label, select, a {
+    cursor: pointer
+}
+
+input[type=tel], input[type=email], input[type=number], input[type=password] {
+    -ms-ime-mode: disabled;
+    ime-mode: disabled;
+}
+
+input[disabled=disabled], button[disabled=disabled] {
+    cursor: not-allowed
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block
+}
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+audio:not([controls]) {
+    display: none
+}
+
+.clearfix:after, .clearfix:after {
+    display: table;
+    content: '';
+    clear: both
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
+
+.block {
+    display: block
+}
+
+.lineblock {
+    display: inline-block
+}
+
+.hidden {
+    display: none
+}
+
+.overhidden {
+    overflow: hidden
+}
+
+.relative {
+    position: relative
+}
+
+.absolute {
+    position: absolute
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-els {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+html {
+  font-size: 24px; }
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 24px; } }
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 22.4px; } }
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 20.8px; } }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 19.2px; } }
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 17.6px; } }
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 16px; } }
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14.4px; } }
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 12.8px; } }
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 11.2px; } }
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 9.6px; } }
+
+body {
+  background-color: #f2f2f2;
+  max-width: 750px;
+  min-height: 100%;
+  margin: 0 auto; }
+#flipbookbox {
+  height: 100vh;
+  width: 100vw; }
+  #flipbookbox #flipbook > div:nth-child(1) {
+    background-color: red; }
+  #flipbookbox #flipbook > div:nth-child(2) {
+    background-color: blue; }
+  #flipbookbox #flipbook > div:nth-child(3) {
+    background-color: yellow; }
+  #flipbookbox #flipbook > div:nth-child(4) {
+    background-color: orange; }
+  #flipbookbox #flipbook > div:nth-child(5) {
+    background-color: green; }
+.pjb_newbox {
+  background-color: #333; }
+.lt_newbox {
+  color: #F60502; }
