@@ -17,7 +17,7 @@
     index
   </title>
   <script src='js/jQuery.js'></script>
-  <script src='/js/turn.js'></script>
+  <script src='/js/turn0.js'></script>
 <link rel="shortcut icon" href="logo.ico"><link href="Css/public.css" rel="stylesheet"><script type="text/javascript" src="Js/public.js"></script></head>
 
 <body>
@@ -33,12 +33,28 @@
       <div class="hard"></div>
     </div>
   </div>
+  <style>
+    #flipbook > div:nth-child(2) {
+      background: url('/Js/turnjs4/samples/docs/pages/1.png');
+    }
+    #flipbook > div:nth-child(3) {
+      background: url('/Js/turnjs4/samples/docs/pages/2.png');
+    }
+    #flipbook > div:nth-child(4) {
+      background: url('/Js/turnjs4/samples/docs/pages/3.png');
+    }
+    #flipbook > div:nth-child(5) {
+      background: url('/Js/turnjs4/samples/docs/pages/4.png');
+    }
+  </style>
   <script>
     $("#flipbook").turn({
+      display: 'single',
       width: '100%',
       height: '100%',
       autoCenter: true
     });
+    $("#flipbook").turn("zoom", 0.5);
   </script>
 </body>
 
