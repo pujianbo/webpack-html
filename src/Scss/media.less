@@ -2,21 +2,21 @@
 @import "quote.scss";
 
 html {
-    font-size: #{$fontBig}px;
+  font-size: #{$fontBig}px;
 }
 $screenSize: $screenBig;
 @for $i from ($screenBig+(-300))/50 through 0 {
-     @media screen and(max-width:#{$screenSize}px){
-        html {
-            font-size: #{$screenSize/$screenBig*$fontBig}px;
-        }
+  @media screen and(max-width:#{$screenSize}px) {
+    html {
+      font-size: #{$screenSize/$screenBig*$fontBig}px;
     }
-    $screenSize: $screenSize+(-50);
+  }
+  $screenSize: $screenSize+(-50);
 }
 
 body {
-    background-color: #f2f2f2;
-    max-width: #{$screenBig}px;
-    min-height: 100%;
-    margin: 0 auto;
+  background-color: #f2f2f2;
+  max-width: #{$screenBig}px;
+  min-height: 100%;
+  margin: 0 auto;
 }
