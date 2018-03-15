@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wowbook</title>
+  <link rel="stylesheet" href="wow_book.css">
+  <script src='jquery.js'></script>
+  <script src='wow_book.min.js'></script>
+  <!-- <script src='wow.min.js'></script> -->
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <div id="some_element">
+    <div> This is the cover 0</div>
+    <div> This is the page 1 </div>
+    <div> This is the page 2 </div>
+    <div> This is the page 3 </div>
+    <div> the end 4</div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#some_element').wowBook({
+        height: '100%',
+        thumbnails: true,
+        slideShow: true,
+        slideShowRunning: true,
+        forceBasicPage: true,
+        bookShadow: false,
+        width: 200
+      });
+    });
+    // $("#some_element").wowBook("zoom", 1);
+  </script>
+</body>
+
+</html>
