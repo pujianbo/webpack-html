@@ -1,5 +1,5 @@
 module.exports = {
-  port: 1234,
+  port: 3006,
   IPv4: 'localhost',
   agentSev: 'http://192.168.2.12:9000',
   getAgent: function() {
@@ -21,9 +21,9 @@ module.exports = {
       const httpStr = 'http://' + this.IPv4 + ':' + this.port;
       const opn = require('opn');
       console.log(httpStr);
-      setTimeout(function() {
-        opn(httpStr);
-      }, 20000);
+      // setTimeout(function() {
+      //   opn(httpStr);
+      // }, 20000);
       return this.IPv4;
     }
   }

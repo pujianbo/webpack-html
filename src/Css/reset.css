@@ -1,6 +1,6 @@
 html {
   color: #333;
-  font: 14px/1.5 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Arial', 'sans-serif';
+  font: 14px/1.5 'PingFangSC', 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Arial', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   word-break: break-word;
@@ -73,60 +73,4 @@ audio, canvas, video {
 
 audio:not([controls]) {
   display: none
-}
-
-.clearfix:after, .clearfix:after {
-  display: table;
-  content: '';
-  clear: both
-}
-
-.left {
-  float: left
-}
-
-.right {
-  float: right
-}
-
-.block {
-  display: block
-}
-
-.lineblock {
-  display: inline-block
-}
-
-.hidden {
-  display: none
-}
-
-.overhidden {
-  overflow: hidden
-}
-
-.relative {
-  position: relative
-}
-
-.absolute {
-  position: absolute
-}
-
-.text-center {
-  text-align: center
-}
-
-.text-left {
-  text-align: left
-}
-
-.text-right {
-  text-align: right
-}
-
-.text-els {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap
 }

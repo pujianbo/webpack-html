@@ -1,12 +1,89 @@
 //public color、size、function
-$colorBlack: #000;
+$colorBlack: #191919;
 $colorBorder: #ccc;
 $colorWhite: #FFF;
 $colorRed: #F60502;
 $colorBlue: #0CD17F;
 $colorOrange: #F87942;
 $colorGary: #999999;
-$colorYellow: #F8BE41;
+$colorYellow: #FFEE00;
 $colorBrown: #E1932E;
-$fontBig: 24;
-$screenBig: 750;
+$fontBig: 28;
+$screenBig: 1080; // $headerHeight:90px;
+// $footerHeight:98px;
+
+.clearfix:after,
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.overhidden {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-els {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-elsmore {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.text-els2 {
+  @extend .text-elsmore;
+  -webkit-line-clamp: 2;
+}
+// @function elsmore($num) {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: $num;
+// }

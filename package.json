@@ -6,6 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --inline",
     "webpack": "webpack -p",
+    "build": "webpack -p",
+    "upload": "./build.sh",
     "sync": "webpack --watch"
   },
   "author": "",

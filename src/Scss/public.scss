@@ -1,0 +1,119 @@
+@import "quote.scss";
+$headerHeight: 160px; // body {
+//   padding-top: $headerHeight;
+// }
+
+.commonlogo {
+  display: inline-block;
+  width: 238px;
+  height: 60px;
+  background: url("../Img/icon/logo.png") no-repeat center /238px;
+}
+
+.header {
+  display: block;
+  background-color: $colorBlack;
+  height: $headerHeight;
+  text-align: center;
+
+  .logo {
+    @extend .commonlogo;
+    margin-top: 50px;
+  }
+}
+
+.footer {
+  background-color: #404040;
+  padding: 142px 50px 98px;
+  text-align: center;
+
+  .logolink a {
+    @extend .commonlogo;
+  }
+
+  .links {
+    margin-top: 90px;
+
+    a {
+      display: inline-block;
+      font-size: 42px;
+      color: #ffffff;
+      line-height: 63px;
+      margin: 0 28px;
+    }
+  }
+
+  .copyright {
+    opacity: 0.8;
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 63px;
+    margin-top: 90px;
+  }
+}
+
+.footlinks {
+  height: 160px;
+  background-color: #404040;
+
+  .links {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: rgba(25,25,25,0.80);
+    height: 160px;
+
+    li {
+      flex: 1;
+
+      a {
+        display: inline-block;
+        border-radius: 100px;
+        line-height: 90px;
+        padding: 0 40px;
+        font-size: 42px;
+        color: #c0813f;
+        border: 4px solid #c0813f;
+        box-sizing: border-box;
+      }
+
+      &.active a {
+        line-height: 98px;
+        background-image: linear-gradient(-90deg, #c9a873 0%, #c0813f 100%);
+        // border-color: transparent;
+        border: 0;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.50);
+  z-index: 100;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .alert {
+    flex: 1;
+
+    .content {
+      display: inline-block;
+    }
+  }
+}

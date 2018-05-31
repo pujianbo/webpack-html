@@ -16,7 +16,7 @@ var html_plugins = function() {
       template: './src/Page/' + fileName + '.html',
       filename: fileName + '.html',
       favicon: __dirname + '/src/img/logo.ico',
-      inject: 'head',
+      inject: 'body',
       title: fileName
     }
     htmlProduct.push(new HtmlWebpackPlugin(conf))
@@ -44,7 +44,7 @@ module.exports = {
     public: ['./src/app']
   },
   output: {
-    //publicPath:'/',
+    // publicPath:'/',
     path: path.join(__dirname, 'build'),
     filename: 'Js/[name].js'
   },
@@ -69,21 +69,21 @@ module.exports = {
         })
       },
       {
-        test: /\.(js|css|scss|less|jsx)$/,
+        test: /\.(js|css|scss|jsx)$/,
         loader: 'webpack-px-to-rem',
         query: {
-          basePx: 24,
+          basePx: 28,
           min: 1,
           floatWidth: 2
         }
       },
       {
         test: /\.(png|jpg|gif|ico)$/,
-        loader: 'url-loader?limit=25000&name=img/[name][hash:8].[ext]'
+        loader: 'url-loader?limit=5000&name=../Img/icon/[name].[ext]'
       },
       {
         test: /\.(eot|woff|ttf|svg)$/,
-        loader: 'url-loader?limit=25000&name=[ext]/[name][hash:8].[ext]'
+        loader: 'url-loader?limit=25000&name=../[ext]/[name][hash:8].[ext]'
       }
     ]
   },
