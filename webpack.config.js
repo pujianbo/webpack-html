@@ -4,6 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin')
+var CleanWebpackPlugin = require('clean-webpack-plugin')
 var glob = require('glob');
 var webConfig = require('./config');
 
@@ -31,12 +32,16 @@ plugins.push(
     port: webConfig.port + 1,
     files: '**',
     files: 'src/*',
-    files: 'build/*',
-    files: 'index.html',
+    files: 'src/*/*',
+    files: 'src/*/*/*',
+    files: 'src/*/*/*/*',
     server: {
       baseDir: ['./build']
     }
   })
+);
+plugins.push(
+  new CleanWebpackPlugin(['build'])
 );
 plugins.push(
   new CopyWebpackPlugin([{
