@@ -4,9 +4,8 @@
   "description": "html demo",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --inline",
-    "webpack": "webpack -p",
-    "build": "webpack -p",
+    "start": "webpack-dev-server --inline --progress --colors",
+    "build": "webpack -p --progress --colors",
     "upload": "./build.sh",
     "sync": "webpack --watch"
   },
