@@ -6,5 +6,5 @@ import './Scss/main.scss'
 
 // import './Js/jquery'
 import './Js/public'
-// import './Js/jquery.lazyload.js'
+import './Js/jquery.lazyload.js'
 // import './Js/jquery.scrollstop.js'
